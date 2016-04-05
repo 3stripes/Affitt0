@@ -78,6 +78,42 @@ return array(
             'Application\Controller\Index' => Controller\IndexController::class
         ),
     ),
+
+    'router' => array(
+        'routes' => array(
+            'index' => array(
+                'type' => 'literal',
+                'options' => array(
+                    'route' => '/',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'index',
+                    ),
+                ),
+            ),
+            'home' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/home',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'home',
+                    ),
+                ),
+            ),
+            'profilo' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/profilo',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'profilo',
+                    ),
+                ),
+            ),
+        ),
+    ),
+
     'view_manager' => array(
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
