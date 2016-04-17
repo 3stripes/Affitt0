@@ -21,11 +21,25 @@ class IndexController extends AbstractActionController
 
     public function homeAction()
     {
-        return new ViewModel();
+        $view = new ViewModel();
+        $this->layout('layout/home');
+        return $view;
     }
 
     public function profiloAction()
     {
         return new ViewModel();
+    }
+
+    public function benvenutoAction()
+    {
+        return new viewModel();
+    }
+
+    public function registratiAction()
+    {
+        $view = new ViewModel();
+        $this->layout('layout/registrati');
+        return $view;
     }
 }

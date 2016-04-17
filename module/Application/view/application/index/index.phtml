@@ -1,66 +1,23 @@
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<div>
-    <div align="center" class="row">
-        <div class="col-sm-2"><h1>logo(cercalo te uu)</h1></div>
-        <div class="col-sm-10"><h1> titolo(rent me - nome proposto da lat)</h1></div>
-    </div><br/><hr>
+<div class="login__check"></div>
 
-    <div class="row">
-        <div class="col-sm-4">
-            <div align="center">
-                 <h3>Login</h3>
-                <p>Accedi al tuo account</p>
-                <br/>
-            </div>
+    <div class="login__form">
 
-            <div class="row">
-                <div class="col-sm-6"><p>Email:</p></div>
-                <div class="col-sm-6"><p>Password:</p></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6"> <input type="text" name="login" placeholder="Email" class="form-control"></div>
-                <div class="col-sm-6"> <input type="password" name="login" placeholder="Password" class="form-control"></div>
-            <div class="row">
-                <div class="col-sm-12"> <input type="button" class="btn btn-info btn-lg btn-block" onclick = "location='home' value="login">  </div>
+        <div class="login__row">
+            <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+                <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+            </svg>
+            <input type="text" class="login__input name" placeholder="Username"/>
         </div>
 
-        <div class="col-sm-4"></div>
-
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-sm-4">
-                     <div align="right">
-                         <h3>Sign up</h3>
-                    </div>
-                 </div>
-            </div><br/>
-
-                <div class="row">
-                    <div class="col-sm-6"><input type="text" name="signIn" placeholder="First Name" class="form-control"> </div>
-                    <div class="col-sm-6"><input type="text" name="signIn" placeholder="Last Name" class="form-control"> </div>
-                </div><br/>
-                <div class="row">
-                    <div class="col-sm-6"><input type="text" name="signIn" placeholder="Email" class="form-control"></div>
-                    <div class="col-sm-6"><input type="text" name="signIn" placeholder="Confirm Email" class="form-control"></div>
-                </div><br/>
-                <div class="row">
-                    <div class="col-sm-6"><input type="password" name="signIn" placeholder="Password" class="form-control"></div>
-                    <div class="col-sm-6"><input type="password" name="signIn" placeholder="Confirm Password" class="form-control"></div>
-                </div><br/>
-                <div class="row">
-                    <div class="col-sm-4"><input type="text" name="signIn" placeholder="Day" class="form-control"></div>
-                    <div class="col-sm-4"><input type="text" name="signIn" placeholder="Month" class="form-control"></div>
-                    <div class="col-sm-4"><input type="text" name="signIn" placeholder="Year" class="form-control"></div>
-                </div><br/>
-                    <div class="col-md-12"><input type="checkbox" name="signIn"> I have read and agree to the <a href="url">Terms of Use</a> and <a href="url">Privacy Policy</a>.</div>
-                    <br/>
-                    <div id="btn"><button type="button" class="btn btn-info btn-lg btn-block">Sign up</button></div>
-
-                </div>
-            </div>
+        <div class="login__row">
+            <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+                <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+            </svg>
+            <input type="password" class="login__input pass" placeholder="Password"/>
         </div>
-    </div>
+
+        <button type="button" class="login__submit" onclick="location='home'">Accedi</button>
+        <p class="login__signup">Non hai un account? &nbsp;<a onclick="location='registrati'">Registrati</a></p>
+
 </div>
-
 

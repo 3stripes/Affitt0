@@ -111,6 +111,26 @@ return array(
                     ),
                 ),
             ),
+            'benvenuto' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/benvenuto',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'benvenuto',
+                    ),
+                ),
+            ),
+            'registrati' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/registrati',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'registrati',
+                    ),
+                ),
+            ),
         ),
     ),
 
@@ -122,6 +142,8 @@ return array(
         'exception_template'       => 'error/index',
         'template_map' => array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/registrati'       => __DIR__ . '/../view/layout/registrati.phtml',
+            'layout/home'             => __DIR__ . '/../view/layout/home.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
