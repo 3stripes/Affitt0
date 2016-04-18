@@ -1102,23 +1102,27 @@
 
 #chat
 {
-	position:absolute;;
-	top:0.5%;
-	left:97.9%;
-	background-color: transparent;
+
+	top:0%;
+	left:98%;
+	background:#222729 url('images/overlay.png');
 	border: transparent;
 	color: #848484;
-	-webkit-animation: mymove 2.5s ease;
+	-webkit-animation: all 2.5s ease;
 	-webkit-transition: all 2.5s ease;
-	-moz-transition: all 2.5s ease;
-	-o-transition: all 1s ease;
-	-ms-transition: all 1s ease;
+	-moz-transition: all 2.5s ease; /*--Mozilla--*/
+	-o-transition: all 2.5s ease; /*--Opera--*/
+	-ms-transition: all 2.5s ease; /*--Chrome & Safari--*/
 	transition: all 2.5s ease;
-	position: all absolute;
+	position: fixed;
 
 }
 
-#chat:hover{
+.go{
 	left:0px;
-	transform:translate(1536px,0px);
+	transform:translate(-315.5px,0px);
+}
+.return{
+	left:0px;
+	transform:translate(0px,0px);
 }
