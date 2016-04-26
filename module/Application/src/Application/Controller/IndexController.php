@@ -36,13 +36,21 @@ class IndexController extends AbstractActionController
 
     public function benvenutoAction()
     {
-        return new viewModel();
+        $view = new ViewModel();
+        $this->layout('layout/benvenuto');
+        return $view;
     }
 
     public function registratiAction()
     {
         $view = new ViewModel();
         $this->layout('layout/registrati');
+        return $view;
+    }
+    public function cercaAction()
+    {
+        $view = new ViewModel();
+        $this->layout('layout/cerca');
         return $view;
     }
 }
