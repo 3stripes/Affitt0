@@ -11,6 +11,7 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Model\Entity\User;
 
 class IndexController extends AbstractActionController
 {
@@ -28,7 +29,9 @@ class IndexController extends AbstractActionController
 
     public function profiloAction()
     {
-        return new ViewModel();
+        $view = new ViewModel();
+        $this->layout('layout/profilo');
+        return $view;
     }
 
     public function benvenutoAction()

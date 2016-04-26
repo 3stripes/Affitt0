@@ -17,9 +17,12 @@ body {
 }
 
 section {
-  width: 420px;
+  width: 70%;
+  height: 68%;
+  top: 10%;
+  left: 20%;
   background: #fff;
-  position: relative;
+  position: absolute;
   margin: 50px auto;
   padding: 0 0 4px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
@@ -40,14 +43,14 @@ section header {
   width: 100%;
 }
 section header .user {
-  float: right;
+  float: left;
   width: 335px;
   padding: 30px 0;
 }
 section header .user .avatar {
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 50%;
   border-radius: 100%;
   background-color: #fff;
 }
@@ -110,12 +113,12 @@ section header .liks span {
 section .menu {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 section .menu a {
-  display: block;
+  display:  block;
   text-decoration: none;
-  padding: 30px 0 30px 120px;
+  padding: 30px 0px 30px 120px;
   font-size: 20px;
   color: #b2b2b2;
   border-left: 4px solid #fff;
@@ -139,14 +142,4 @@ section .menu a.timeline {
 }
 section .menu a.podcast {
   background-image: url(http://i.imgur.com/ZnwPYeb.png);
-}
-
-.copyrights {
-  text-align: center;
-  text-transform: capitalize;
-  margin: 50px;
-}
-.copyrights a {
-  text-decoration: none;
-  color: #f67878;
 }

@@ -89,7 +89,7 @@
 	{
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128,128,128,0.5);
+		border-bottom: 0px;
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -1125,4 +1125,10 @@
 .return{
 	left:0px;
 	transform:translate(0px,0px);
+}
+
+#cerca{
+	height: 30px;
+	position: relative;
+	top:1%;
 }

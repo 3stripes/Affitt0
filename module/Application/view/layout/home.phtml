@@ -30,7 +30,7 @@
 <div id="header" class="skel-panels-fixed">
     <div class="top">
         <div id="logo"> <span class="image avatar48"><img src="img/prova.jpg" alt=""></span>
-            <h1 id="title">Nome Utente</h1>
+            <h1 id="title"><a onclick="location='profilo'">Nome Utente</a></h1>
             <span class="byline">Ranking ee</span> </div>
         <nav id="nav">
             <ul>
@@ -53,8 +53,8 @@
 </div>
 <button class="icon icon-user" id="chat"></button>
 
-<div id="areaChat" align="center"><br/>
-    <input type="search" placeholder="cerca" />
+<div id="areaChat" align="center">
+    <input type="search" id="cerca" placeholder="cerca" />
 </div>
 
 <?php echo $this->content; ?>

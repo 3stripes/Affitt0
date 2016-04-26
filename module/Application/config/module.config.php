@@ -144,6 +144,7 @@ return array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
             'layout/registrati'       => __DIR__ . '/../view/layout/registrati.phtml',
             'layout/home'             => __DIR__ . '/../view/layout/home.phtml',
+            'layout/profilo'            => __DIR__ . '/../view/layout/profilo.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',

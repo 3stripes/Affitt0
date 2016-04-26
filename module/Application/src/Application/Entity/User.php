@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Entity;
+namespace Application\Model\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -247,3 +247,4 @@ class User
 
 
 }
+?>
