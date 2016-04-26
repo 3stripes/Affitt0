@@ -1,0 +1,45 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('Rent Me! '. $this->translate('cerca'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+    <?php echo $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+    ?>
+
+    <!-- Le styles -->
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/prova.jpg', 'href' => $this->basePath() . '/img/prova.jpg'))
+        ->prependStylesheet($this->basePath('css/style.css'))
+        ->prependStylesheet($this->basePath('css/skel-noscript.css'))
+        ->prependStylesheet($this->basePath('css/fontface.css'))
+        ->prependStylesheet($this->basePath('css/style-wide.css'))?>
+
+    <!-- Scripts -->
+    <?php echo $this->headScript()
+        ->prependFile($this->basePath('js/init.js'))
+        ->prependFile($this->basePath('js/chat.js'))
+        ->prependFile($this->basePath('js/jquery.min.js'))
+        ->prependFile($this->basePath('js/skel.min.js'))
+        ->prependFile($this->basePath('js/skel-panels-min.js'))?>
+
+</head>
+<body>
+<button class="icon icon-user" id="chat"></button>
+<button class="icon icon-search" id="cerca"></button>
+
+<div id="areaChat" align="center">
+    <input type="search" id="cerca" placeholder="cerca" />
+</div>
+
+<?php echo $this->content; ?>
+
+
+
+
+<!-- /container -->
+<?php echo $this->inlineScript() ?>
+</body>
+</html>

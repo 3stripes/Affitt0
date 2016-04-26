@@ -131,6 +131,16 @@ return array(
                     ),
                 ),
             ),
+            'cerca' => array(
+                'type' => 'Segment',
+                'options' => array(
+                    'route' => '/cerca',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'cerca',
+                    ),
+                ),
+            ),
         ),
     ),
 
@@ -144,7 +154,8 @@ return array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
             'layout/registrati'       => __DIR__ . '/../view/layout/registrati.phtml',
             'layout/home'             => __DIR__ . '/../view/layout/home.phtml',
-            'layout/profilo'            => __DIR__ . '/../view/layout/profilo.phtml',
+            'layout/profilo'          => __DIR__ . '/../view/layout/profilo.phtml',
+            'layout/cerca'          => __DIR__ . '/../view/layout/cerca.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
